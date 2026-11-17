@@ -1,12 +1,18 @@
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background: #09090d;
+  background: #09070f;
   color: #fff;
   font-family: Arial, sans-serif;
+  line-height: 1.55;
 }
 
 header {
@@ -20,7 +26,8 @@ h1, h2, h3 {
   color: #c66bff;
 }
 
-button, .button {
+button,
+.button {
   background: #a83cf0;
   color: white;
   padding: 14px 22px;
@@ -29,6 +36,12 @@ button, .button {
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background: #8730c4;
 }
 
 section {
@@ -47,6 +60,11 @@ section {
 
 a {
   color: #d18aff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
 }
 
 footer {
@@ -54,9 +72,12 @@ footer {
   padding: 25px;
   text-align: center;
   color: #aaa;
+  border-top: 1px solid #65318a;
 }
 
-input, textarea {
+input,
+textarea,
+select {
   width: 100%;
   padding: 13px;
   margin: 8px 0;
@@ -64,4 +85,46 @@ input, textarea {
   color: white;
   border: 1px solid #65318a;
   border-radius: 8px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* REMOVE ALL IMAGE DISPLAY */
+
+img,
+picture,
+video,
+.image,
+.gallery,
+.gallery img,
+.visual img,
+.background-image {
+  display: none !important;
+}
+
+/* REMOVE BACKGROUND IMAGES */
+
+* {
+  background-image: none !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  section {
+    padding: 25px 15px;
+  }
+
+  header {
+    padding: 20px 12px;
+  }
+
+  button,
+  .button {
+    width: 100%;
+    text-align: center;
+  }
 }
