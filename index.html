@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Richard's Detailing — premium automotive customisation, ambient lighting, starry headliners, Alcantara materials and car accessories in the UK.">
+  <meta name="theme-color" content="#09070f">
+  <title>Richard's Detailing | Premium Car Customisation</title>
+  <style>
+    :root{--bg:#09070f;--panel:#14101d;--panel2:#1b1426;--purple:#a855f7;--purple2:#c084fc;--text:#f7f2ff;--muted:#b9aec8;--line:#332542;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(9,7,15,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:.08em;font-size:1.08rem}.brand span{color:var(--purple2)}
+    nav{display:flex;gap:22px;align-items:center;font-size:.92rem;color:var(--muted)}nav a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border:1px solid var(--purple);border-radius:10px;background:linear-gradient(135deg,#8b35d9,#6120a1);color:white;font-weight:800;cursor:pointer;box-shadow:0 0 24px #8b35d933}
+    .btn.secondary{background:transparent;border-color:var(--line);box-shadow:none}.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+    .hero{padding:88px 0 74px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 80% 30%,#642b8a55,transparent 38%),radial-gradient(ellipse at 20% 80%,#32134e66,transparent 42%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.eyebrow{color:var(--purple2);font-weight:900;letter-spacing:.18em;text-transform:uppercase;font-size:.75rem}
+    h1{font-size:clamp(2.6rem,6vw,5.3rem);line-height:.98;letter-spacing:-.055em;margin:16px 0 22px}h1 em{font-style:normal;color:var(--purple2);text-shadow:0 0 32px #a855f766}
+    .lead{color:var(--muted);font-size:1.12rem;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-art{min-height:360px;border:1px solid #7b3aa566;border-radius:24px;position:relative;overflow:hidden;background:linear-gradient(145deg,#251331,#0d0a13 65%);box-shadow:0 0 65px #a855f722}
+    .hero-art:before{content:"";position:absolute;inset:12% 8%;border-radius:48% 48% 20% 20%;border:2px solid #c084fc55;box-shadow:0 0 40px #a855f755,inset 0 0 50px #a855f722;transform:perspective(500px) rotateX(5deg)}
+    .hero-art:after{content:"";position:absolute;left:10%;right:10%;bottom:17%;height:5px;background:linear-gradient(90deg,transparent,var(--purple2),#fff,var(--purple2),transparent);box-shadow:0 0 24px var(--purple)}
+    .art-label{position:absolute;inset:auto 22px 22px;text-align:center;color:#e9d5ff;font-weight:900;letter-spacing:.22em;font-size:.78rem}
+    .stars{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#c084fc 1px,transparent 1.5px);background-size:43px 43px,71px 71px;background-position:0 0,20px 17px;opacity:.48}
+    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:6px 0 0;letter-spacing:-.04em}.section-head p{color:var(--muted);max-width:480px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden}.card-body{padding:19px}.visual{height:155px;display:grid;place-items:center;background:radial-gradient(circle at 50% 50%,#8b35d944,transparent 55%),linear-gradient(135deg,#21142e,#0e0b14);font-size:3.4rem}.card h3{margin:0 0 7px;font-size:1.08rem}.muted{color:var(--muted)}.price{color:var(--purple2);font-weight:900;font-size:1.2rem}.card p{font-size:.9rem;color:var(--muted);min-height:48px;margin:8px 0 16px}
+    .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.service{padding:24px;background:linear-gradient(145deg,#1b1426,#100d17);border:1px solid var(--line);border-radius:17px}.service-top{display:flex;justify-content:space-between;gap:14px}.service h3{margin:0 0 8px}.service p{color:var(--muted);margin:0 0 14px}.tag{font-size:.75rem;border:1px solid #7e45a5;color:#dfbdff;border-radius:999px;padding:5px 10px;white-space:nowrap}
+    .note{background:#21152d;border-left:3px solid var(--purple);padding:14px 17px;border-radius:8px;color:#e8d9f7;margin-top:18px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{padding:26px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.panel h3{margin-top:0}
+    form{display:grid;gap:12px}label{font-size:.86rem;color:#e7d9f5}input,select,textarea{width:100%;background:#0d0a13;color:#fff;border:1px solid var(--line);border-radius:9px;padding:12px}textarea{min-height:105px;resize:vertical}
+    .field{display:grid;gap:6px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .cart-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.cart-count{display:inline-grid;place-items:center;background:var(--purple);color:#fff;border-radius:50%;width:22px;height:22px;font-size:.75rem;margin-left:5px}
+    footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .small{font-size:.8rem;color:var(--muted)}.toast{padding:12px;background:#21152d;border:1px solid var(--purple);border-radius:10px;color:#ead8ff;display:none}
+    @media(max-width:850px){.hero-grid,.split{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}nav{display:none}.hero{padding:62px 0}.hero-art{min-height:270px}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.grid,.service-grid,.two{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.hero-art{min-height:230px}section{padding:55px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">RICHARD'S <span>DETAILING</span></a>
+    <nav><a href="#services">Services</a><a href="#shop">Shop</a><a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#contact">Contact</a></nav>
+    <a class="btn secondary" href="#shop">Shop <span class="cart-count" id="cartCount">0</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Premium automotive customisation · United Kingdom</div>
+        <h1>TRANSFORM<br>YOUR <em>INTERIOR.</em></h1>
+        <p class="lead">Ambient lighting, starry headliners, Alcantara materials and carefully selected car accessories. Give your vehicle a look that feels personal.</p>
+        <div class="hero-actions"><a class="btn" href="#services">Explore services</a><a class="btn secondary" href="#shop">Visit online shop</a></div>
+      </div>
+      <div class="hero-art"><div class="stars"></div><div class="art-label">LIGHT • DETAIL • PERSONALITY</div></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Made for your vehicle</div><h2>Our Services</h2></div><p>Choose an upgrade and send your vehicle details for a tailored quote.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="service-top"><h3>Ambient Lighting Installation</h3><span class="tag">From £150</span></div><p>Interior ambient lighting installation. Final price depends on the selected kit and vehicle configuration.</p><a class="btn secondary" href="#booking" data-service="Ambient Lighting Installation">Request a quote</a></article>
+        <article class="service"><div class="service-top"><h3>Starry Headliner Installation</h3><span class="tag">From £250</span></div><p>Fibre-optic star ceiling options with 300, 500, 600 or 1,000 stars. Price depends on the selected star count and setup.</p><a class="btn secondary" href="#booking" data-service="Starry Headliner Installation">Request a quote</a></article>
+        <article class="service"><div class="service-top"><h3>Alcantara Headliner</h3><span class="tag">Quote required</span></div><p>Headliner retrimming with Alcantara or suede-style material. Ask about available colours and vehicle fitment.</p><a class="btn secondary" href="#booking" data-service="Alcantara Headliner">Request a quote</a></article>
+        <article class="service"><div class="service-top"><h3>Interior Customisation</h3><span class="tag">Quote required</span></div><p>Interior styling upgrades and selected accessories to give your vehicle a distinctive finish.</p><a class="btn secondary" href="#booking" data-service="Interior Customisation">Request a quote</a></article>
+      </div>
+      <div class="note">Prices shown are starting prices, not fixed quotes. The final price is confirmed after reviewing the vehicle and chosen specification.</div>
+    </div>
+  </section>
+
+  <section id="shop" style="background:#0d0a13">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Parts & upgrades</div><h2>Online Shop</h2></div><p>Browse the product categories. Add items to your enquiry basket and request availability and pricing.</p></div>
+      <div class="grid">
+        <article class="card"><div class="visual">✦</div><div class="card-body"><h3>Ambient Lighting Kits</h3><p>RGB kits, LED strips, controllers and interior lighting components.</p><div class="price">Price on request</div><button class="btn add" data-name="Ambient Lighting Kit">Add to enquiry</button></div></article>
+        <article class="card"><div class="visual">◈</div><div class="card-body"><h3>Alcantara Materials</h3><p>Headliner materials and suede-style fabric options. Ask about colours and sizes.</p><div class="price">Price on request</div><button class="btn add" data-name="Alcantara Material">Add to enquiry</button></div></article>
+        <article class="card"><div class="visual">✧</div><div class="card-body"><h3>Starry Headliner Kits</h3><p>Fibre-optic kits with different star-count options for custom installations.</p><div class="price">Price on request</div><button class="btn add" data-name="Starry Headliner Kit">Add to enquiry</button></div></article>
+        <article class="card"><div class="visual">⚙</div><div class="card-body"><h3>Car Accessories</h3><p>Selected interior and styling accessories for your vehicle.</p><div class="price">Price on request</div><button class="btn add" data-name="Car Accessories">Add to enquiry</button></div></article>
+      </div>
+      <div class="split" style="margin-top:22px">
+        <div class="panel"><h3>Your enquiry basket <span class="cart-count" id="cartCount2">0</span></h3><div id="cartItems" class="muted">Your basket is empty.</div><p class="small">This starter version collects product enquiries; online card checkout can be connected after payment-provider setup.</p><button class="btn" id="sendCart">Send product enquiry</button></div>
+        <div class="panel"><h3>Need help choosing?</h3><p class="muted">Tell us your vehicle make, model and year, and what you would like to upgrade. We can check compatibility before you order.</p><a class="btn secondary" href="#booking">Ask about compatibility</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Work in progress</div><h2>Gallery</h2></div><p>Add your own before-and-after photos and installation videos here as your portfolio grows.</p></div>
+      <div class="grid">
+        <div class="card"><div class="visual">紫</div><div class="card-body"><h3>Ambient Lighting</h3><p>Upload photos of completed interior lighting installations.</p></div></div>
+        <div class="card"><div class="visual">✧</div><div class="card-body"><h3>Starry Headliners</h3><p>Show different star counts and lighting effects.</p></div></div>
+        <div class="card"><div class="visual">◈</div><div class="card-body"><h3>Alcantara</h3><p>Show fabric colours, finishes and retrim projects.</p></div></div>
+        <div class="card"><div class="visual">★</div><div class="card-body"><h3>Customer Cars</h3><p>Feature customer vehicles with their permission.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" style="background:#0d0a13">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Let's plan your upgrade</div><h2>Request an Appointment</h2></div><p>Send your details and preferred service. This form prepares an enquiry message; it does not confirm a booking automatically.</p></div>
+      <div class="split">
+        <div class="panel">
+          <form id="bookingForm">
+            <div class="two"><div class="field"><label for="name">Full name *</label><input id="name" required placeholder="Your name"></div><div class="field"><label for="phone">Phone number *</label><input id="phone" required placeholder="+44..."></div></div>
+            <div class="two"><div class="field"><label for="vehicle">Vehicle make & model *</label><input id="vehicle" required placeholder="e.g. Audi A3"></div><div class="field"><label for="year">Vehicle year</label><input id="year" placeholder="e.g. 2010"></div></div>
+            <div class="field"><label for="service">Service required *</label><select id="service" required><option value="">Choose a service</option><option>Ambient Lighting Installation</option><option>Starry Headliner Installation</option><option>Alcantara Headliner</option><option>Interior Customisation</option><option>Product enquiry</option></select></div>
+            <div class="field"><label for="date">Preferred date</label><input id="date" type="date"></div>
+            <div class="field"><label for="details">Additional details</label><textarea id="details" placeholder="Tell us what you have in mind..."></textarea></div>
+            <button class="btn" type="submit">Prepare my enquiry</button><div class="toast" id="formToast"></div>
+          </form>
+        </div>
+        <div class="panel" id="contact">
+          <h3>Contact Richard's Detailing</h3><p class="muted">For product availability, vehicle compatibility or a custom installation quote, get in touch.</p>
+          <p><strong>Service area:</strong> United Kingdom</p>
+          <p><strong>Email:</strong> Add your business email before publishing</p>
+          <p><strong>WhatsApp:</strong> Add your business number before publishing</p>
+          <div class="note">Before launch, replace the contact placeholders with your real business contact details and test every enquiry route.</div>
+          <p class="small">Social links: add your TikTok, Instagram and Facebook profile URLs here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-grid"><div><strong>RICHARD'S DETAILING</strong><div class="small">Premium automotive customisation</div></div><div class="small">© <span id="yearNow"></span> Richard's Detailing. All rights reserved.</div><div class="small"><a href="#home">Back to top ↑</a></div></div></footer>
+
+<script>
+  // SETUP REQUIRED: enter your WhatsApp number in international format, without + or spaces.
+  // Example UK format: 447700900123
+  const WHATSAPP_NUMBER = "";
+  const basket = [];
+  const $ = (id) => document.getElementById(id);
+  $("yearNow").textContent = new Date().getFullYear();
+
+  function updateBasket(){
+    $("cartCount").textContent = basket.length;
+    $("cartCount2").textContent = basket.length;
+    $("cartItems").innerHTML = basket.length
+      ? basket.map((item,i)=>`<div class="cart-row"><span>${item}</span><button class="btn secondary" style="padding:5px 9px" onclick="removeItem(${i})" aria-label="Remove ${item}">Remove</button></div>`).join("")
+      : "Your basket is empty.";
+  }
+  function removeItem(i){basket.splice(i,1);updateBasket();}
+  document.querySelectorAll(".add").forEach(btn=>btn.addEventListener("click",()=>{basket.push(btn.dataset.name);updateBasket();btn.textContent="Added ✓";setTimeout(()=>btn.textContent="Add to enquiry",1100)}));
+  function sendWhatsApp(message){
+    if(!WHATSAPP_NUMBER){alert("The website is ready for setup. Add your WhatsApp number in the WHATSAPP_NUMBER setting in index.html before publishing.");return;}
+    window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank");
+  }
+  $("sendCart").addEventListener("click",()=>{
+    if(!basket.length){alert("Add at least one product to your enquiry basket.");return;}
+    sendWhatsApp("Hello Richard's Detailing, I would like to enquire about:\n- "+basket.join("\n- ")+"\n\nPlease send me prices and availability.");
+  });
+  document.querySelectorAll("[data-service]").forEach(a=>a.addEventListener("click",()=>{$("service").value=a.dataset.service;}));
+  $("bookingForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const message = [
+      "Hello Richard's Detailing, I would like to request an appointment.",
+      "Name: "+$("name").value,
+      "Phone: "+$("phone").value,
+      "Vehicle: "+$("vehicle").value+" "+$("year").value,
+      "Service: "+$("service").value,
+      "Preferred date: "+$("date").value,
+      "Details: "+$("details").value
+    ].join("\n");
+    if(!WHATSAPP_NUMBER){$("formToast").style.display="block";$("formToast").textContent="Your enquiry form is working. Add your WhatsApp number in the website settings to send enquiries directly.";return;}
+    sendWhatsApp(message);
+  });
+</script>
+</body>
+</html>
