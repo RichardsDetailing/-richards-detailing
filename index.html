@@ -45,6 +45,7 @@
     .card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden}
     .card-body{padding:19px}
     .visual{height:155px;display:grid;place-items:center;background:radial-gradient(circle at 50% 50%,#8b35d944,transparent 55%),linear-gradient(135deg,#21142e,#0e0b14);font-size:3.4rem}
+    .visual img{width:100%;height:100%;object-fit:cover;display:block}
     .card h3{margin:0 0 7px;font-size:1.08rem}
     .muted{color:var(--muted)}
     .price{color:var(--purple2);font-weight:900;font-size:1.2rem}
@@ -189,91 +190,81 @@
 
       <div class="grid">
 
-<!-- AMBIENT LIGHTING - £80 -->
-<article class="card">
-  <div class="visual">
-    <img src="IMG_5772.jpeg" alt="Premium RGB ambient lighting in car interior">
-  </div>
+        <!-- AMBIENT LIGHTING - £80 -->
+        <article class="card">
+          <div class="visual">
+            <img src="IMG_5772.jpeg" alt="Premium RGB ambient lighting in car interior">
+          </div>
 
-  <div class="card-body">
-    <h3>Ambient Lighting Kit</h3>
-    <p>Premium RGB ambient lighting kit for your vehicle interior. Supplied without installation.</p>
+          <div class="card-body">
+            <h3>Ambient Lighting Kit</h3>
+            <p>Premium RGB ambient lighting kit for your vehicle interior. Supplied without installation.</p>
+            <div class="price">£80.00</div>
 
-    <div class="price">£80.00</div>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1UcoGU2Ye2R0brBFkS1KwoyM"
+              publishable-key="pk_live_51UcnBO2Ye2R0brBFTMIQ4BevkMUOhNWJCzULQ1JVtMeIRrwD8hCFh7DmUBBzJJPU0pRqhRqK9ispHCSpr9R10Jw700MnN0hlWh">
+            </stripe-buy-button>
 
-    <stripe-buy-button
-      buy-button-id="buy_btn_1UcoGU2Ye2R0brBFkS1KwoyM"
-      publishable-key="pk_live_51UcnBO2Ye2R0brBFTMIQ4BevkMUOhNWJCzULQ1JVtMeIRrwD8hCFh7DmUBBzJJPU0pRqhRqK9ispHCSpr9R10Jw700MnN0hlWh">
-    </stripe-buy-button>
+            <button class="btn secondary add" data-name="Ambient Lighting Kit - £80">
+              Add to enquiry
+            </button>
+          </div>
+        </article>
 
-    <button class="btn secondary add" data-name="Ambient Lighting Kit - £80">
-      Add to enquiry
-    </button>
-  </div>
-</article>
+        <!-- STARRY LIGHTS - £49.90 -->
+        <article class="card">
+          <div class="visual">
+            <img src="7724E9CC-7AB4-4CB3-8C3E-B916A328359F.jpeg" alt="Starry fibre optic car headliner">
+          </div>
 
-        
-<!-- STARRY LIGHTS - £49.90 -->
-<article class="card">
-  <div class="visual">
-    <img src="7724E9CC-7AB4-4CB3-8C3E-B916A328359F.jpeg" alt="Starry fibre optic car headliner">
-  </div>
+          <div class="card-body">
+            <h3>Starry Lights Kit</h3>
+            <p>Fibre optic starry lighting kit for creating a beautiful starry sky effect inside your vehicle. Supplied without installation.</p>
+            <div class="price">£49.90</div>
 
-  <div class="card-body">
-    <h3>Starry Lights Kit</h3>
-    <p>Fibre optic starry lighting kit for creating a beautiful starry sky effect inside your vehicle. Supplied without installation.</p>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1UcoQs2Ye2R0brBF8kHfT16O"
+              publishable-key="pk_live_51UcnBO2Ye2R0brBFTMIQ4BevkMUOhNWJCzULQ1JVtMeIRrwD8hCFh7DmUBBzJJPU0pRqhRqK9ispHCSpr9R10Jw700MnN0hlWh">
+            </stripe-buy-button>
 
-    <div class="price">£49.90</div>
+            <button class="btn secondary add" data-name="Starry Lights Kit - £49.90">
+              Add to enquiry
+            </button>
+          </div>
+        </article>
 
-    <stripe-buy-button
-      buy-button-id="buy_btn_1UcoQs2Ye2R0brBF8kHfT16O"
-      publishable-key="pk_live_51UcnBO2Ye2R0brBFTMIQ4BevkMUOhNWJCzULQ1JVtMeIRrwD8hCFh7DmUBBzJJPU0pRqhRqK9ispHCSpr9R10Jw700MnN0hlWh">
-    </stripe-buy-button>
+        <!-- ALCANTARA CUSTOMISATION - £100 -->
+        <article class="card">
+          <div class="visual">
+            <img
+              src="3DAE59AC-7B0D-4E83-BC01-82B8CAF360FB.jpeg"
+              alt="Black Alcantara-style car headliner material"
+              style="width:100%;height:100%;object-fit:cover;display:block;">
+          </div>
 
-    <button class="btn secondary add" data-name="Starry Lights Kit - £49.90">
-      Add to enquiry
-    </button>
-  </div>
-</article>
+          <div class="card-body">
+            <h3>Alcantara Interior Customisation</h3>
+            <p>
+              Automotive interior customisation with premium
+              Alcantara-style materials. Contact us about colours,
+              availability and fitment.
+            </p>
 
+            <div class="price">£100.00</div>
 
-        
+            <stripe-buy-button
+              buy-button-id="buy_btn_1Ucobo2Ye2R0brBFKCx96Mz3"
+              publishable-key="pk_live_51UcnBO2Ye2R0brBFTMIQ4BevkMUOhNWJCzULQ1JVtMeIRrwD8hCFh7DmUBBzJJPU0pRqhRqK9ispHCSpr9R10Jw700MnN0hlWh">
+            </stripe-buy-button>
 
-
-<!-- ALCANTARA CUSTOMISATION - £100 -->
-<article class="card">
-  <div class="visual">
-    <img
-      src="3DAE59AC-7B0D-4E83-BC01-82B8CAF360FB.jpeg"
-      alt="Black Alcantara-style car headliner material"
-      style="width:100%;height:100%;object-fit:cover;display:block;">
-  </div>
-
-  <div class="card-body">
-    <h3>Alcantara Interior Customisation</h3>
-
-    <p>
-      Automotive interior customisation with premium
-      Alcantara-style materials. Contact us about colours,
-      availability and fitment.
-    </p>
-
-    <div class="price">£100.00</div>
-
-  <stripe-buy-button
-  buy-button-id="buy_btn_1Ucobo2Ye2R0brBFKCx96Mz3"
-  publishable-key="pk_live_...">
-</stripe-buy-button>
-
-    <button
-      class="btn secondary add"
-      data-name="Alcantara Interior Customisation - £100">
-      Add to enquiry
-    </button>
-  </div>
-</article>
-
-
+            <button
+              class="btn secondary add"
+              data-name="Alcantara Interior Customisation - £100">
+              Add to enquiry
+            </button>
+          </div>
+        </article>
 
         <!-- CUSTOM CAR UPGRADES - COMING SOON -->
         <article class="card">
@@ -306,28 +297,18 @@
     </div>
   </section>
 
-
-<style>
-  #gallery .visual,
-  #gallery img,
-  #gallery picture {
-    display: none !important;
-  }
-</style>
-
-<section id="gallery">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Work in progress</div>
-        <h2>Gallery</h2>
+  <!-- GALLERY: NO PHOTOS OR IMAGE CARDS -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Work in progress</div>
+          <h2>Gallery</h2>
+        </div>
+        <p>Our automotive customisation portfolio. More projects coming soon.</p>
       </div>
-      <p>Our automotive customisation portfolio.</p>
     </div>
-  </div>
-</section>
->
-
+  </section>
 
   <section id="booking" style="background:#0d0a13">
     <div class="wrap">
